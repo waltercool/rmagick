@@ -1,5 +1,6 @@
 require 'date'
 require './lib/rmagick/version'
+
 Gem::Specification.new do |s|
   s.name = %q{rmagick}
   s.version = Magick::VERSION
@@ -28,5 +29,7 @@ Gem::Specification.new do |s|
   s.has_rdoc = false
   s.required_ruby_version = ">= #{Magick::MIN_RUBY_VERSION}"
   s.requirements << "ImageMagick #{Magick::MIN_IM_VERSION} or later"
+
   s.add_development_dependency 'rake-compiler'
+  s.add_development_dependency 'codeclimate-test-reporter'
 end

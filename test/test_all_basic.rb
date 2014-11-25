@@ -2,6 +2,7 @@
 require 'RMagick'
 require 'test/unit'
 require 'test/unit/ui/console/testrunner'  if !RUBY_VERSION[/^1\.9|^2/]
+require 'codeclimate'
 
 puts RUBY_VERSION
 puts RUBY_VERSION.class

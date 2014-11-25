@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'rmagick'
+require 'codeclimate'
 
 class TmpnamTest < Minitest::Test
   # test the @@_tmpnam_ class variable

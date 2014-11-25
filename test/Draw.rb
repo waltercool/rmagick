@@ -4,6 +4,7 @@
 require 'RMagick'
 require 'test/unit'
 require 'test/unit/ui/console/testrunner'  if !RUBY_VERSION[/^1\.9|^2/]
+require 'codeclimate'
 
 class Magick::Draw
   def self._dummy_img_

@@ -12,7 +12,8 @@ env:
   # Latest 6.7 release
   - IMAGEMAGICK_VERSION=6.7.9-10
   # Latest 6.8 release
-  - IMAGEMAGICK_VERSION=6.8.9-6
+  # Test coverage of this build is uploaded to CodeClimate
+  - IMAGEMAGICK_VERSION=6.8.9-6 CODECLIMATE_REPO_TOKEN=0b91ec6534a68bac33b546033b49dda3b8a0d826e8af2f46a476d8b28a620b2b
   # Try with HDRI support, we don't mind if this fails currently.
   - IMAGEMAGICK_VERSION=6.8.9-6 CONFIGURE_OPTIONS=--enable-hdri
 
