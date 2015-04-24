@@ -18,8 +18,7 @@ env:
   # Latest release
   - IMAGEMAGICK_VERSION=latest
 
-before_install:
-  - source before_install_$TRAVIS_OS_NAME.sh
+before_install: . ./before_install_$TRAVIS_OS_NAME.sh
 
 rvm:
   - 1.8
@@ -52,6 +51,7 @@ matrix:
       env: IMAGEMAGICK_VERSION=6.8.9-10
     - rvm: 2.0
       env: IMAGEMAGICK_VERSION=6.8.9-10 CONFIGURE_OPTIONS=--enable-hdri
+
   allow_failures:
     - rvm: 1.8
     - rvm: 2.2
