@@ -1,3 +1,5 @@
+set -o verbose
+
 dpkg --list imagemagick
 sudo apt-get update
 sudo apt-get remove -y imagemagick
