@@ -174,6 +174,7 @@ end
 
 Rake::TestTask.new(:test) do |t|
   t.libs << 'test'
+  t.options = '-v'
 end
 
 task :test => :compile
