@@ -4,6 +4,7 @@ dpkg --list imagemagick
 sudo apt-get update
 sudo apt-get remove -y imagemagick
 sudo apt-get install -y build-essential libx11-dev libxext-dev zlib1g-dev libpng12-dev libjpeg-dev libfreetype6-dev libxml2-dev
+cc --version
 sudo apt-get build-dep -y imagemagick
 case $IMAGEMAGICK_VERSION in
     latest)
